@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circumference Calculator</title>
+    <style>
+        body {
+            font-family: Verdana;
+            font-size: 10px;
+        }
+        button{
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 35px;
+            color:white;
+            background-color: black;
+            border-radius: 20px;
+        }
+        label{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="myH1">Enter a Radius to Calculate Circumference</h1>
+    <label for="myText">Radius: </label>
+    <input type="text", id="myText"><br><br>
+    <button id="mySubmit">Submit</button>
+
+    <script>
+        const PI = 3.14159;
+        let Radius;
+        let Circumference;
+        document.getElementById("mySubmit").onclick = function() {
+            Radius= document.getElementById("myText").value;
+            Radius = Number(Radius);
+
+            Circumference = 2 * PI * Radius;
+            console.log(Circumference);
+            document.getElementById("myH1").textContent = Circumference + " cm";
+
+
+        }
+    </script>
+
+    
+</body>
+</html>
