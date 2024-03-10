@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+    #text{
+    margin: auto;
+    text-align: center
+}
+#Enter {
+    font-size: 20px;
+    font-family: Verdana;
+    display: block;
+    text-align: center;
+    
+}
+#calc{
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
+.buttons{
+    padding: 10px 20px;
+}
+    </style>
+</head>
+<body>
+    <h2>Calculator</h1>
+    <label for="Label1", id="Enter">Enter: </label><br>
+    <div id="text">
+        <input type="text", id="Label1"><br><br>
+    </div>
+
+    <div id="calc">
+        <button id="1", class="button">1</button>
+        <button id="2", class="button">2</button>
+        <button id="3", class="button">3</button><br><br>
+        <button id="4", class="button">4</button>
+        <button id="5", class="button">5</button>
+        <button id="6", class="button">6</button><br><br>
+        <button id="7", class="button">7</button>
+        <button id="8", class="button">8</button>
+        <button id="9", class="button">9</button><br><br>
+        <button id="0", class="button">0</button>
+    </div>
+
+
+    <script>
+        const oneBtn = document.getElementById("1");
+        const twoBtn = document.getElementById("2");
+        const threeBtn = document.getElementById("3");
+        const fourBtn = document.getElementById("4");
+        const fiveBtn = document.getElementById("5");
+        const sixBtn = document.getElementById("6");
+        const sevenBtn = document.getElementById("7");
+        const eightBtn = document.getElementById("8");
+        const nineBtn = document.getElementById("9");
+        const zeroBtn = document.getElementById("0");
+        const label = document.getElementById("Label1");
+        
+        let count = 0;
+        oneBtn.onclick = function() {
+        count ++;
+        label.textContent = count;
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,19 +1,18 @@
-// Consts are Variables that cannot be changed, with const, variables will not change if called or changed in future
+const oneBtn = document.getElementById("1");
+const twoBtn = document.getElementById("2");
+const threeBtn = document.getElementById("3");
+const fourBtn = document.getElementById("4");
+const fiveBtn = document.getElementById("5");
+const sixBtn = document.getElementById("6");
+const sevenBtn = document.getElementById("7");
+const eightBtn = document.getElementById("8");
+const nineBtn = document.getElementById("9");
+const zeroBtn = document.getElementById("0");
+const label = document.getElementById("Label1");
 
-const PI = 3.1459;
- let radius;
- let circumference;
+let count = 0;
 
-
-
-
-
-document.getElementById("mySubmit").onclick = function(){
-    radius = document.getElementById("myText").value;
-    radius = Number(radius);
-    circumference = 2 * PI * radius;
-    document.getElementById("myH3").textContent = circumference + "cm";
-
-
-    
+oneBtn.onclick = function() {
+    count ++;
+    label.textContent = count;
 }
