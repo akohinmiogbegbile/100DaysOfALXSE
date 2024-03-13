@@ -1,49 +1,22 @@
-// Math Objects in JS - is a built in object in JS that provides a 
-//         collection of properties and methods such as PI or E
+// Random number generator
 
-let x = 3;
-let y = 2;
-let z = 1;
+const myButton = document.getElementById("myButton");
+const myLabel1 = document.getElementById("label1");
+const myLabel2 = document.getElementById("label2");
+const myLabel3 = document.getElementById("label3");
+const max = 6;
+const min = 1;
 
-//z = Math.round(x);
+let randomNum1;
+let randomNum2;
+let randomNum3;
 
-//rounds down
-//z = Math.floor(x);
+myButton.onclick = function() {
+    randomNum1 = Math.floor(Math.random() * max) + min;
+    randomNum2 = Math.floor(Math.random() * max) + min;
+    randomNum3 = Math.floor(Math.random() * max) + min;
+    myLabel1.textContent = randomNum1
+    myLabel2.textContent = randomNum2
+    myLabel3.textContent = randomNum3
+}
 
-//rounds up
-//z = Math.ceil(x);
-
-//eliminates the decimals
-//z = Math.trunc(x);
-
-//power
-//z = Math.pow(x,y);
-
-//square root
-//z = Math.sqrt(x);
-
-//logarithms
-//z = Math.log(x);
-
-//Sin
-//z = Math.sin(x);
-
-//Cos
-//z = Math.cos(x);
-
-//Tan
-//z = Math.tan(x);
-
-//Absolute Value, basically removing the -ve sign i guess
-//z = Math.abs(x);
-
-//sign of a variable, i.e the sign of the variable, 1 for +ve, 0 for 0 and -1 for -ve
-//z = Math.sign(x);
-
-//Maximum and minimum values
-//let max = Math.max(x,y,z);
-//let min = Math.min(x,y,z);
-
-
-
-console.log(min);

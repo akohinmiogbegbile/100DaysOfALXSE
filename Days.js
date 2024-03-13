@@ -167,4 +167,101 @@ decreaseBtn.onclick = function() {
     countLabel.textContent = count;
 }
 
+
+Math Objects
+ Math Objects in JS - is a built in object in JS that provides a 
+         collection of properties and methods such as PI or E
+
+let x = 3;
+let y = 2;
+let z = 1;
+
+z = Math.round(x);
+
+rounds down
+z = Math.floor(x);
+
+rounds up
+z = Math.ceil(x);
+
+eliminates the decimals
+z = Math.trunc(x);
+
+power
+z = Math.pow(x,y);
+
+square root
+z = Math.sqrt(x);
+
+logarithms
+z = Math.log(x);
+
+Sin
+z = Math.sin(x);
+
+Cos
+z = Math.cos(x);
+
+Tan
+z = Math.tan(x);
+
+Absolute Value, basically removing the -ve sign i guess
+z = Math.abs(x);
+
+sign of a variable, i.e the sign of the variable, 1 for +ve, 0 for 0 and -1 for -ve
+z = Math.sign(x);
+
+Maximum and minimum values
+let max = Math.max(x,y,z);
+let min = Math.min(x,y,z);
+
+
+
+console.log(min);
 */
+
+// Random Number Generator
+
+//This displays Random numbers between 0 and 1
+//let randomNum = Math.random();
+
+//This displays Random numbers from 0 - 5 (0-1, 1-2, 2-3, 3-4, 4-5, 5-6)
+//let randomNum = Math.random() * 6;
+
+
+//This displays Random numbers from 0 - 6
+//let randomNum = Math.floor(Math.random() * 6) + 1;
+
+
+/*
+const max = 100; and const min = 50;: 
+These lines declare two constants, max and min, 
+with values 100 and 50, respectively. These 
+constants define the range within which you want 
+to generate a random number.
+*/
+const max = 100;
+const min = 50;
+
+/*
+let randomNum = Math.floor(Math.random() * (max - min)) + min;:
+
+Math.random(): This function generates a floating-point 
+random number between 0 (inclusive) and 1 (exclusive). 
+So, Math.random() can generate values like 0.0, 0.1, 0.2, 
+..., up to 0.9999... but never exactly 1.
+(max - min): This calculates the difference
+ between the max and min values, which defines the range of
+  numbers from which you want to generate the random number.
+Math.random() * (max - min): This expression generates a 
+random number between 0 (inclusive) and the difference between max and min (exclusive).
+Math.floor(...): This function rounds down the result of 
+the multiplication to the nearest integer, ensuring you get an 
+integer within the desired range.
++ min: This addition adjusts the generated random number 
+to fall within the desired range defined by min and max. It shifts the 
+range to start from min instead of 0.
+*/
+let randomNum = Math.floor(Math.random() * (max - min)) + min;
+
+console.log(randomNum);
