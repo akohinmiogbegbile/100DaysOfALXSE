@@ -1,18 +1,49 @@
-const oneBtn = document.getElementById("1");
-const twoBtn = document.getElementById("2");
-const threeBtn = document.getElementById("3");
-const fourBtn = document.getElementById("4");
-const fiveBtn = document.getElementById("5");
-const sixBtn = document.getElementById("6");
-const sevenBtn = document.getElementById("7");
-const eightBtn = document.getElementById("8");
-const nineBtn = document.getElementById("9");
-const zeroBtn = document.getElementById("0");
-const label = document.getElementById("Label1");
+// Math Objects in JS - is a built in object in JS that provides a 
+//         collection of properties and methods such as PI or E
 
-let count = 0;
+let x = 3;
+let y = 2;
+let z = 1;
 
-oneBtn.onclick = function() {
-    count ++;
-    label.textContent = count;
-}
+//z = Math.round(x);
+
+//rounds down
+//z = Math.floor(x);
+
+//rounds up
+//z = Math.ceil(x);
+
+//eliminates the decimals
+//z = Math.trunc(x);
+
+//power
+//z = Math.pow(x,y);
+
+//square root
+//z = Math.sqrt(x);
+
+//logarithms
+//z = Math.log(x);
+
+//Sin
+//z = Math.sin(x);
+
+//Cos
+//z = Math.cos(x);
+
+//Tan
+//z = Math.tan(x);
+
+//Absolute Value, basically removing the -ve sign i guess
+//z = Math.abs(x);
+
+//sign of a variable, i.e the sign of the variable, 1 for +ve, 0 for 0 and -1 for -ve
+//z = Math.sign(x);
+
+//Maximum and minimum values
+//let max = Math.max(x,y,z);
+//let min = Math.min(x,y,z);
+
+
+
+console.log(min);
