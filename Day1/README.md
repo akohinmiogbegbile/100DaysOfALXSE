@@ -1,6 +1,3 @@
-Certainly! Here's a README.md file for your GitHub repository:
-
-```markdown
 # 100 Days of Front-end Coding Challenge
 
 Welcome to my 100 Days of Front-end Coding Challenge! This repository tracks my progress as I commit to coding daily for 100 days to enhance my skills as a front-end developer.
@@ -48,7 +45,6 @@ Create a basic HTML webpage with the following components:
     </ul>
 </body>
 </html>
-```
 
 ## Repository Structure
 - `work/`: Directory to store files related to the challenge tasks.
